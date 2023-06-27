@@ -255,7 +255,6 @@ main h2,
 .servicios ul li,
 .contact_items p,
 .about_me article,
-footer p,
 #mensaje p{
 	color: #000;
 	font-size: 26px;
@@ -382,6 +381,13 @@ footer{
 
 }
 
+footer p{
+	color: #000;
+	font-size: 26px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin: 10px 0px;
+	line-height: 1.5;
+}
 
 #inicio,
 #servicios,

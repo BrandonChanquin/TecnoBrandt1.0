@@ -1,3 +1,24 @@
+/* Media queries del height */
+
+@media screen and (max-height: 410px){
+	.portada{
+	height: 150vh;
+} 
+}
+
+@media screen and (min-height: 410px){
+	.portada{
+	height: 120vh;
+} 
+}
+
+@media screen and (min-height: 500px){
+	.portada{
+	height: 90vh;
+} 
+}
+
+/* Media queries del width */
 
 @media screen and (max-width: 900px){
 

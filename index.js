@@ -24,29 +24,35 @@ $(document).ready(function(){
 		$("#mensaje").fadeOut(1000).hidde();
 	}
 
+//! Codigo del menu responsive
 
-	// var html = document.querySelector("html");
-	// var inicio = document.querySelector(".inicio");
-	// var label = document.querySelector(".label");
-	// var servicio = document.querySelector(".servicio");
-	// var contacto = document.querySelector(".contacto");
-	// var sobre_mi = document.querySelector(".sobre_mi");
+let nav = document.querySelector(".nav");
+let abrir = document.querySelector(".open");
+let cerrar = document.querySelector(".close");
 
-	// inicio.addEventListener("click", close_menu, false);
-	// servicio.addEventListener("click", close_menu, false);
-	// contacto.addEventListener("click", close_menu, false);
-	// sobre_mi.addEventListener("click", close_menu, false);
-	// label.addEventListener("click", open_menu, false);
+// acá lo hice con una funcion flecha
+abrir.addEventListener("click", () => {
+	nav.classList.add("visible");
+})
 
+//Acá lo hice con una funcion normal 
+cerrar.addEventListener("click", cerrar_menu, false);
 
-	// function close_menu(){
-	// $(".nav").fadeOut(500).hidde();
-	// // $(".nav").animate({left:"-100%"},500);
-	// }
+function cerrar_menu(){
+	nav.classList.remove("visible");
+}
 
-	// function open_menu(){
-	// $(".nav").fadeIn(500).show();
-	// // $(".nav").animate({right:"100%"},500);
-	// }
+//! codigo para que cuando den click en una seccion del menu se cierre el nav
+let contacto = document.querySelector(".contacto");
+let inicio = document.querySelector(".inicio");
+let servicio = document.querySelector(".servicio");
+let sobre_mi = document.querySelector(".selected");
 
-	
+contacto.addEventListener("click", menu_no, false);
+inicio.addEventListener("click", menu_no, false);
+servicio.addEventListener("click", menu_no, false);
+sobre_mi.addEventListener("click", menu_no, false);
+
+function menu_no(){
+	nav.classList.remove("visible");
+}

@@ -23,7 +23,7 @@
 @media screen and (max-width: 900px){
 
 .header{
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 	align-items: center; 
 }
 

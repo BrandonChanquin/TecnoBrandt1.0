@@ -24,7 +24,8 @@
 
 .header{
 	flex-flow: row wrap;
-	align-items: center; 
+	align-items: baseline; 
+	
 }
 
 .nav a{
